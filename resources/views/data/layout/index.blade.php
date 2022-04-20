@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <!-- <script src="js/index.js"></script> -->
 </head>
 <body>
     <div class="container-fluid">
