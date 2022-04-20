@@ -17,7 +17,9 @@ php artisan migrate
 ```
 
 4. Agar seederlar bilan test qilib ko'rmoqchi bo'lsayiz:
-    ```bash
-    php artisan db:seed
-    ```
+
+```bash
+php artisan db:seed
+```
+
 5. Rahmat
