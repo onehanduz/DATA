@@ -5,21 +5,19 @@
 3. Quidagi kammandalari beriladi:
 
 ```bash
-$ composer install
+composer install
 ```
 
 ```bash
-$ php artisan key:generate
+php artisan key:generate
 ```
 
 ```bash
-$ php artisan migrate
-```
-
-```bash
-$ php artisan db:seed
+php artisan migrate
 ```
 
 4. Agar seederlar bilan test qilib ko'rmoqchi bo'lsayiz:
-   <copy-button>php artisan db:seed</copy-button>
+    ```bash
+    php artisan db:seed
+    ```
 5. Rahmat
