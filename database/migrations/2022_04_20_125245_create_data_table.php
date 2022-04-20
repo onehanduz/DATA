@@ -15,7 +15,12 @@ return new class extends Migration
     {
         Schema::create('data', function (Blueprint $table) {
             $table->id();
+            $table->string('en')->nullable();
+            $table->string('uz')->nullable();
+            $table->text('text')->nullable();
+            $table->string('path')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

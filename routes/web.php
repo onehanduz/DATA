@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DataController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/data', [DataController::class, 'index'])->name('data.index');
+Route::get('/data/create', [DataController::class, 'create'])->name('data.create');
+Route::post('/data/store', [DataController::class, 'store'])->name('data.store');
+Route::get('/data/{id}/edit', [DataController::class, 'edit'])->name('data.edit');
+Route::get('/data/{id}/show', [DataController::class, 'show'])->name('data.show');
+Route::get('/data/{id}/delete', [DataController::class, 'destroy'])->name('data.delete');
+Route::post('/data/{id}/update', [DataController::class, 'update'])->name('data.update');
